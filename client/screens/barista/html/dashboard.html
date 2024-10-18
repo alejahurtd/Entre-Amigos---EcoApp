@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard - Barista</title>
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="../../../assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="padding: 20px">
+			<table border="1" width="100%" style="margin-top: 20px">
+				<thead>
+					<tr>
+						<th>Pedido</th>
+						<th>Tamaño</th>
+						<th>Hora</th>
+						<th>Detalles</th>
+						<th>Producto</th>
+						<th>Estado</th>
+					</tr>
+				</thead>
+				<tbody id="ordenes">
+					<!-- Las órdenes aparecerán aquí -->
+				</tbody>
+			</table>
+		</main>
+
+		<script type="module" src="/screens/barista/js/dashboard.js"></script>
+	</body>
+</html>

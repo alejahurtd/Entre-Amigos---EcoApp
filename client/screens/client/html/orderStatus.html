@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estado del Pedido - Juan Valdez</title>
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="../../../assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="text-align: center; margin-top: 50px">
+			<h2>¡Tu pedido ha sido confirmado!</h2>
+			<p>Número de confirmación <strong>1144</strong></p>
+
+			<table style="margin: auto; border-collapse: collapse; width: 80%">
+				<thead>
+					<tr>
+						<th>Pedido</th>
+						<th>Hora</th>
+						<th>Producto</th>
+						<th>Estado</th>
+					</tr>
+				</thead>
+				<tbody id="tabla-orden">
+					<tr>
+						<td>1144</td>
+						<td>9:41 AM</td>
+						<td>Nevado de Brownie</td>
+						<td id="estado-pedido">Orden recibida</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button id="volver" style="margin-top: 20px; padding: 10px 20px"> Volver al Inicio </button>
+		</main>
+
+		<script type="module" src="/screens/client/js/orderStatus.js"></script>
+	</body>
+</html>

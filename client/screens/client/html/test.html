@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test - Juan Valdez</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="/assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="text-align: center; margin-top: 50px">
+			<h2 id="pregunta"></h2>
+			<form id="opciones" style="margin-top: 20px"></form>
+
+			<div style="margin-top: 30px">
+				<button id="anterior" style="padding: 10px 20px">Anterior</button>
+				<button id="siguiente" style="padding: 10px 20px" disabled>Siguiente</button>
+			</div>
+		</main>
+
+		<script type="module" src="/screens/client/js/test.js"></script>
+	</body>
+</html>

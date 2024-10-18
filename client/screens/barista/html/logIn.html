@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iniciar sesión - Barista</title>
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="../../../assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="display: flex; justify-content: center; align-items: center; height: 80vh">
+			<div
+				style="
+					background: white;
+					padding: 30px;
+					border-radius: 8px;
+					box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+					text-align: center;
+				"
+			>
+				<h2>Bienvenido a Juan Valdez</h2>
+				<p>Escribe tu código*</p>
+				<input
+					type="text"
+					id="codigo-barista"
+					placeholder="Escribe tu código"
+					required
+					style="width: 100%; padding: 10px; margin-bottom: 20px"
+				/>
+				<button
+					id="iniciar-sesion"
+					style="width: 100%; padding: 15px; background-color: #c8102e; color: white; border: none; cursor: pointer"
+				>
+					Iniciar sesión
+				</button>
+			</div>
+		</main>
+
+		<script type="module" src="/screens/barista/js/logIn.js"></script>
+	</body>
+</html>

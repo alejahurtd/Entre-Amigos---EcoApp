@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Entre Amigos - Juan Valdez</title>
+
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="/assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="text-align: center; margin-top: 50px">
+			<h1>Bienvenido a <strong>Entre Amigos</strong> de <strong>Juan Valdez</strong></h1>
+			<p>
+				¿No sabes qué pedir hoy? Entre amigos nos recomendamos. <br />
+				<strong>Responde algunas preguntas para recomendarte la bebida perfecta.</strong>
+			</p>
+
+			<button
+				id="start-button"
+				style="
+					background-color: #c8102e;
+					color: white;
+					border: none;
+					padding: 10px 20px;
+					cursor: pointer;
+					font-size: 18px;
+					margin-top: 20px;
+				"
+			>
+				Comenzar
+			</button>
+		</main>
+
+		<script type="module" src="../js/home.js"></script>
+	</body>
+</html>

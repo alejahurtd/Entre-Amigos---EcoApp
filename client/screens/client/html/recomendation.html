@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Recomendación - Juan Valdez</title>
+
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="../../../assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="text-align: center; margin-top: 50px">
+			<h2>¡Tu bebida ideal es Nevado Brownie Juan Valdez!</h2>
+			<p>Es una cremosa bebida fría a base de café con brownie decorada con Chantilly.</p>
+			<p><strong>Tamaño Mediana</strong></p>
+
+			<div style="margin-top: 30px">
+				<button id="continuar" style="padding: 10px 20px">Continuar para facturar</button>
+				<button id="cancelar" style="padding: 10px 20px; margin-top: 10px">Cancelar</button>
+			</div>
+		</main>
+
+		<script type="module" src="/screens/client/js/recomendation.js"></script>
+	</body>
+</html>

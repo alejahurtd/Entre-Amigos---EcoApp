@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Proceso del Pedido - Barista</title>
+
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="../../../assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="text-align: center; margin-top: 50px">
+			<h2>Gestión de Pedidos</h2>
+			<p>Pedido Número: <strong>1144</strong></p>
+
+			<div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px">
+				<button
+					class="estado-boton"
+					data-estado="Orden recibida"
+					style="padding: 10px 20px; background-color: #6aaf35; color: white; border: none; cursor: pointer"
+				>
+					Orden recibida
+				</button>
+
+				<button
+					class="estado-boton"
+					data-estado="Orden en proceso"
+					style="padding: 10px 20px; background-color: #ffa500; color: white; border: none; cursor: pointer"
+				>
+					En proceso
+				</button>
+
+				<button
+					class="estado-boton"
+					data-estado="Orden lista"
+					style="padding: 10px 20px; background-color: #c8102e; color: white; border: none; cursor: pointer"
+				>
+					Lista
+				</button>
+			</div>
+
+			<button id="volver" style="margin-top: 20px; padding: 10px 20px"> Volver al Inicio </button>
+		</main>
+
+		<script type="module" src="/screens/client/js/orderProcess.js"></script>
+	</body>
+</html>

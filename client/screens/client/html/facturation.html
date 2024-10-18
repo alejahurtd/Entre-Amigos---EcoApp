@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Facturación - Juan Valdez</title>
+
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<header style="background-color: #c8102e; padding: 10px; text-align: center">
+			<img src="../../../assets/juanvaldez-logo.png" alt="Juan Valdez Logo" style="height: 40px" />
+		</header>
+
+		<main style="text-align: center; margin-top: 50px">
+			<h2>Tu bebida será facturada con los siguientes datos</h2>
+			<p>Por favor llena la siguiente información.</p>
+
+			<form
+				id="form-facturacion"
+				style="display: flex; flex-direction: column; gap: 15px; align-items: center; margin-top: 20px"
+			>
+				<input type="text" placeholder="Escribe tu nombre" required />
+				<input type="text" placeholder="Escribe tu apellido" required />
+				<input type="text" placeholder="Escribe tu cédula" required />
+				<input type="email" placeholder="Escribe tu correo electrónico" required />
+
+				<button
+					id="confirmar"
+					style="padding: 10px 20px; background-color: #c8102e; color: white; border: none; cursor: pointer"
+					>Confirmar pedido</button
+				>
+				<button
+					id="cancelar"
+					type="button"
+					style="
+						padding: 10px 20px;
+						margin-top: 10px;
+						background-color: #f8d7da;
+						color: #c8102e;
+						border: none;
+						cursor: pointer;
+					"
+					>Cancelar</button
+				>
+			</form>
+		</main>
+
+		<script type="module" src="/screens/client/js/facturation.js"></script>
+	</body>
+</html>
